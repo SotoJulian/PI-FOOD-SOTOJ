@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Caveat:wght@700&family=Freehand&family=Source+Serif+Pro&display=swap');
+
+.detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+
+.divTitle {
+    height: 50px;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    color: #928dab;
+}
+
+.title h2 {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    font-size:larger
+}
+
+.divInfo {
+    margin: 3px;
+}
+
+.info {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.data {
+    margin: 30px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 12px;
+    
+}
+.data p {
+    text-align: justify;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.img {
+    border-radius: 10px;
+}
+

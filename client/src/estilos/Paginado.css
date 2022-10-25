@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Caveat:wght@700&family=Freehand&family=Source+Serif+Pro&display=swap');
+
+
+.pagination {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #1f1c2c;
+    
+}
+
+.pagination button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.item button:hover {
+    cursor: pointer;
+    font-size: 130%;
+    text-shadow: 0 0 5px #fff,
+}

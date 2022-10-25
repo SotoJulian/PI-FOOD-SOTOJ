@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+.counteinerLandingPage {
+    height: 100vh;
+    background: url(../img/LandingPageFood.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 250px;
+    height: 20vh;
+}
+
+.title h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 900%;
+    color: #928dab;
+}
+
+.title button {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #928dab;
+    font-size: 100%;
+    border: solid 1px #928dab;
+    border-radius: 15px;
+    background: none;
+}
+
+.title button:hover {
+    cursor: pointer;
+    font-size: 115%;
+    transform-origin: center;
+    text-shadow: 0 0 5px bisque,
+}
+
+

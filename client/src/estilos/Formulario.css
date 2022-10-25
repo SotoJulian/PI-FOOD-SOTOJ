@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Caveat:wght@700&family=Freehand&family=Source+Serif+Pro&display=swap');
+
+.container{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.form {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 70%;
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.088);
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.313);
+}
+
+.divs{
+    height: 80%;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.divLabels {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.label {
+    width: 250px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+    margin-left: 8px;
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+.divName p {
+    font-size: 12px;
+    display:inline-flex;
+    margin-left: 2px;
+    color:red;
+}
+
+.divSummary p {
+    font-size: 12px;
+    display: inline-flex;
+    margin-left: 2px;
+    color: red;
+}
+
+.text {
+    width: 250px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+    margin: 8px;
+}
+
+.select {
+    margin-left: 8px;
+    width: 150px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.divButton {
+    display: flex;
+    position: relative;
+    margin: 10px;
+    justify-content: center;
+}
+.button {
+    height: 100%;
+    width: 106px;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 5px;
+    padding: 5px 18px;
+    border: none;
+    border-radius: 15px;
+    background: #928dab;
+    color: aliceblue;
+}
+
+.button:hover {
+    background:black;
+}

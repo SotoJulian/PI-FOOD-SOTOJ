@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Caveat:wght@700&family=Freehand&family=Source+Serif+Pro&display=swap');
+
+.nav {
+    height: 10vh;
+    background: #1f1c2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav h3 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: #928dab;
+}
+
+.food h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 1.9rem;
+    color: white;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #928dab;
+}
+
+.search form button {
+    height: 120%;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #d3efed;
+    background-color: #928dab;
+    color: #d3efed;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.search input:hover {
+    cursor: pointer;
+}
+
+.search form button:hover {
+    cursor: pointer;
+    text-shadow: 0 5px #ffd438;
+}
+
+.link {
+    text-decoration: none;
+}

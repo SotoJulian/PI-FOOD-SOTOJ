@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Caveat:wght@700&family=Freehand&family=Source+Serif+Pro&display=swap');
+
+.filter {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    border-bottom: 5em;
+    border-top: 2px;
+    padding-top: 2px;
+    
+}
+
+.filter div {
+    width: 200px;
+}
+
+.filter select {
+    width: 145px;
+    border: 0.8px solid #2082d8;
+    border-radius: 10px;
+    background: none;
+    margin: 8px;
+}
+
+.filter select:hover {
+    background-color: #928dab;
+}
+
+.filter option {
+    background: none;
+    font-family: 'Red Hat Display', sans-serif;
+}

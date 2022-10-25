@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Caveat:wght@700&family=Freehand&family=Source+Serif+Pro&display=swap');
+
+.card {
+border: 1px solid rgba(114, 104, 104, 0.489);
+border-radius: 10px;
+background: linear-gradient(#1f1c2c , #928dab);
+box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.313);
+width: 300px;
+height: 350px;
+margin-top: 5px;
+margin-bottom: 5px;
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+
+}
+
+.textName {
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+color: aliceblue;
+
+}
+
+.name {
+font-family: 'Red Hat Display', sans-serif;
+display: flex;
+align-items: flex-start;
+text-align: center;
+}
+
+.img {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.textDiet {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.diet {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    color: aliceblue;
+    text-align: center;
+}
