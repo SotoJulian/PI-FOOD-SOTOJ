@@ -10,7 +10,15 @@ function Card({data}) {
 			</div>
 			<div>
 				<Link to={`/recipes/${data.id}`}>
-					<img className='img' src={data.image} alt='img' />
+					{data.image === null || !data.image ? (
+						<img
+							className='img'
+							src='https://bitsofco.de/content/images/2018/12/broken-1.png'
+							alt='notfound'
+						/>
+					) : (
+						<img className='img' src={data.image} alt='img' />
+					)}
 				</Link>
 			</div>
 			<div className='textDiet'>

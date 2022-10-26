@@ -7,6 +7,8 @@ import Cards from '../components/Cards';
 import NotFound from '../components/NotFound';
 import Pagination from '../components/Pagination';
 
+import '../estilos/Search.css';
+
 function Search() {
 	const dispatch = useDispatch();
 	const searchRecipe = useSelector((state) => state.searchRecipesByName);
@@ -33,20 +35,24 @@ function Search() {
 	);
 
 	return (
-		<div>
-			{searchRecipe.length > 0 ? (
-				<>
-					<h2>Result whit {name}:</h2>
-					<Cards recipes={currentPageRecipes} />
-				</>
-			) : (
-				<NotFound />
-			)}
-			<Pagination
-				recipesPerPage={recipesPerPage}
-				totalRecipes={searchRecipe.length}
-				paginate={paginate}
-			/>
+		<div className='search'>
+			<div className='cards'>
+				{searchRecipe.length > 0 ? (
+					<>
+						<h2>Result whit {name}:</h2>
+						<Cards recipes={currentPageRecipes} />
+					</>
+				) : (
+					<NotFound />
+				)}
+			</div>
+			<div className='pag'>
+				<Pagination
+					recipesPerPage={recipesPerPage}
+					totalRecipes={searchRecipe.length}
+					paginate={paginate}
+				/>
+			</div>
 		</div>
 	);
 }

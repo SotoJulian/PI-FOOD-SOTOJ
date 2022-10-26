@@ -1,0 +1,16 @@
+.search {
+    display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 99%;
+    padding-top: 15px;
+}
+
+ 

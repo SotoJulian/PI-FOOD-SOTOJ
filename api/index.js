@@ -20,7 +20,6 @@
 const server = require('./src/app.js');
 const {conn} = require('./src/db.js');
 const {Diet} = require('../api/src/db.js');
-//const {getApi} = require('../api/src/controllers/gets/getApi.js');
 
 function getDiets() {
 	Diet.bulkCreate([
@@ -30,6 +29,7 @@ function getDiets() {
 		{name: 'ketogenic'},
 		{name: 'lacto-vegetarian'},
 		{name: 'vegan'},
+		{name: 'vegetarian'},
 		{name: 'ovo-vegetarian'},
 		{name: 'paleolithic'},
 		{name: 'pescatarian'},

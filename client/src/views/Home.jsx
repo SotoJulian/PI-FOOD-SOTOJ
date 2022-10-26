@@ -16,7 +16,7 @@ function Home() {
 
 	useEffect(() => {
 		dispatch(getRecipes());
-	}, []);
+	}, [dispatch]);
 
 	//Filtro / Ordenado
 	let allRecipes;
@@ -24,10 +24,10 @@ function Home() {
 		? (allRecipes = recipes)
 		: (allRecipes = filterRecipes);
 
+	//Pagination
 	const [page, setPage] = useState(1);
 	const [recipesPerPage] = useState(9);
 
-	// Paginacion
 	function paginate(e, num) {
 		e.preventDefault();
 		setPage(num);

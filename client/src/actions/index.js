@@ -7,6 +7,7 @@ export const SEARCH_BY_NAME = 'SEARCH_BY_NAME';
 export const FILTER_RECIPES_BY_DIET = 'FILTER_RECIPES_BY_DIET';
 export const ORDER_ASC = 'ORDER_ASC';
 export const ORDER_DESC = 'ORDER_DESC';
+export const RESET = 'RESET';
 
 export function getRecipes() {
 	return (dispatch) =>
@@ -71,6 +72,7 @@ export function filterRecipesByDiet(value) {
 }
 
 export function orderAsc(asc) {
+	console.log('order', asc);
 	return {
 		type: ORDER_ASC,
 		payload: asc,
@@ -78,6 +80,7 @@ export function orderAsc(asc) {
 }
 
 export function orderDesc(desc) {
+	console.log('order', desc);
 	return {
 		type: ORDER_DESC,
 		payload: desc,

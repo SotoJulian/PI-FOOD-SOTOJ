@@ -9,7 +9,7 @@ function Filter({paginate}) {
 
 	useEffect(() => {
 		dispatch(getDiets());
-	}, []);
+	}, [dispatch]);
 
 	const handleFilterDiet = (e) => {
 		dispatch(filterRecipesByDiet(e.target.value));

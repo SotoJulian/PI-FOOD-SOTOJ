@@ -3,6 +3,7 @@ const {Router} = require('express');
 const axios = require('axios');
 const {API_KEY} = process.env;
 const {Recipe, Diet} = require('../db.js');
+const {Op} = require('sequelize');
 
 const router = Router();
 
@@ -11,11 +12,12 @@ router.get('', async (req, res) => {
 	try {
 		if (name) {
 			const nameFormat = name.toLowerCase();
-			const dataDb = await Recipe.findOne({
+			const dataDb = await Recipe.findAll({
 				where: {
-					title: nameFormat,
+					title: {
+						[Op.like]: `%${nameFormat}%`,
+					},
 				},
-
 				include: {
 					model: Diet,
 					attributes: ['name'],
@@ -24,16 +26,13 @@ router.get('', async (req, res) => {
 					},
 				},
 			});
-			if (dataDb) {
-				let searchDB = [dataDb];
-				return res.status(200).json(searchDB);
-			}
 
 			const infoApi = await axios.get(
 				`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=100`
 			);
-			const dataApi = infoApi.data.results.filter(
-				(e) => e.title.toLowerCase() === nameFormat
+
+			const dataApi = infoApi.data.results.filter((e) =>
+				e.title.toLowerCase().includes(nameFormat)
 			);
 
 			const formatInfoApi = dataApi.map((recipe) => {
@@ -51,8 +50,9 @@ router.get('', async (req, res) => {
 					image: recipe.image,
 				};
 			});
-			formatInfoApi.length > 0
-				? res.status(200).json(formatInfoApi)
+			const fullInfo = [...dataDb, ...formatInfoApi];
+			fullInfo.length > 0
+				? res.status(200).json(fullInfo)
 				: res.status(400).json({msj: `The recipe does not exist`});
 		}
 

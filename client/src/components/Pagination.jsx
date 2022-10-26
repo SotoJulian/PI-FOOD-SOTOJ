@@ -13,7 +13,9 @@ function Pagination({recipesPerPage, totalRecipes, paginate}) {
 		<nav className='pagination'>
 			{pageNumbers.map((num) => (
 				<div className='item' key={num}>
-					<button onClick={(e) => paginate(e, num)}>{num}</button>
+					<button className='search' onClick={(e) => paginate(e, num)}>
+						{num}
+					</button>
 				</div>
 			))}
 		</nav>

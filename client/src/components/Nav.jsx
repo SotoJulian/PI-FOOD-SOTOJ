@@ -1,13 +1,21 @@
 import React, {useState} from 'react';
+import {useDispatch} from 'react-redux';
 import {Link, NavLink} from 'react-router-dom';
+import {searchByName} from '../actions';
 import '../estilos/Nav.css';
 
 function Nav() {
+	const dispatch = useDispatch();
 	const [name, setName] = useState('');
+
+	function handleChange(e) {
+		e.preventDefault();
+		setName(e.target.value);
+	}
 
 	function handleSubmit(e) {
 		e.preventDefault();
-		setName('');
+		dispatch(searchByName(name));
 	}
 
 	return (
@@ -37,7 +45,7 @@ function Nav() {
 						placeholder='Search recipe...'
 						type='text'
 						value={name}
-						onChange={(e) => setName(e.target.value)}
+						onChange={(e) => handleChange(e)}
 					></input>
 					<NavLink to={`/search/${name}`}>
 						<button name='name' type='submit'>

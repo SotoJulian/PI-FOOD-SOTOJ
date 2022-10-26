@@ -7,6 +7,7 @@ function DetailRecipe({match}) {
 	const detailRecipe = useSelector((state) => state.detailRecipe);
 
 	const dispatch = useDispatch();
+
 	useEffect(() => {
 		dispatch(detailRecipes(match.params.id));
 	}, [dispatch, match.params.id]);
@@ -23,12 +24,28 @@ function DetailRecipe({match}) {
 					<div className='data'>
 						<div className='box'>
 							<div className='image'>
-								<img className='img' src={detailRecipe.image} alt='img' />
+								{detailRecipe.image === null || !detailRecipe.image ? (
+									<img
+										className='img'
+										src='https://bitsofco.de/content/images/2018/12/broken-1.png'
+										alt='notfound'
+									/>
+								) : (
+									<img className='img' src={detailRecipe.image} alt='img' />
+								)}
 							</div>
 							<div className='dishdiet'>
 								<div>
-									<h4>Dish type: {detailRecipe.dishTypes}</h4>
-									<h4>Diet type: {detailRecipe.diets}</h4>
+									{detailRecipe.dishTypes ? (
+										<h4>Dish type: {detailRecipe.dishTypes}</h4>
+									) : (
+										<h4>Dish type: N/A</h4>
+									)}
+									{detailRecipe.diets ? (
+										<h4>Diet type: {detailRecipe.diets}</h4>
+									) : (
+										<h4>Diet type: N/A</h4>
+									)}
 								</div>
 							</div>
 							<div className='summary'>
@@ -42,7 +59,11 @@ function DetailRecipe({match}) {
 							</div>
 							<div className='steps'>
 								<h3>Steps</h3>
-								<p>{detailRecipe.steps}</p>
+								{detailRecipe.steps ? (
+									<p>{detailRecipe.steps}</p>
+								) : (
+									<p>Recipe without steps</p>
+								)}
 							</div>
 						</div>
 					</div>
