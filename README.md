@@ -1,20 +1,20 @@
 <h1 align="center">Individual Project - Food 🍕💻</h1>
 
-<h3 align="center">Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! 🙂 </h3>
+<h3 align="center">Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! 🚀 🙂 </h3>
 
 <h3 align="center">Landing Page!</h3>
 <p align="center">
   <img height="300" width="600" src="./food1.png" />
 </p>
-<h3 align="center">Home!</h3>
+<h3 align="center">Home! 👨‍🚀</h3>
 <p align="center">
   <img height="300" width="600" src="./food2.png" />
 </p>
-<h3 align="center">Filtros!</h3>
+<h3 align="center">Filtros! 🤘</h3>
 <p align="center">
   <img height="300" width="600" src="./food3.png" />
 </p>
-<h3 align="center">Crear nueva receta!</h3>
+<h3 align="center">Crear nueva receta! ✍️</h3>
 <p align="center">
   <img height="300" width="600" src="./food4.png" />
 </p>
