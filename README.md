@@ -1,6 +1,6 @@
-# Individual Project - Food
+# Individual Project - Food 🍕💻
 
-<h3>Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! </h3>
+<h3>Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! 🙂 </h3>
 
 <h3 align="center">Landing Page!</h3>
 <p align="center">
