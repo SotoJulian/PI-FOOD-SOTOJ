@@ -1,4 +1,5 @@
-                   # Individual Project - Food 🍕💻
+# Individual Project - Food 🍕💻
+<h1 align="center">Individual Project - Food 🍕💻</h1>
 
 <h3 align="center">Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! 🙂 </h3>
 
