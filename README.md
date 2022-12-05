@@ -1,6 +1,6 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
-# Individual Project - Henry Food
+# Individual Project - Food
+<h3>Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! </h3>
 
 <p align="right">
   <img height="200" src="./cooking.png" />
