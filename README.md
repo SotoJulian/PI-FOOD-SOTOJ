@@ -2,17 +2,17 @@
 
 <h3>Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! </h3>
 
-<p align="left">
-  <img height="200" width="200" src="./food1.png" />
+<p align="center">
+  <img height="300" width="600" src="./food1.png" />
 </p>
 <p align="center">
-  <img height="200" width="200" src="./food2.png" />
+  <img height="300" width="600" src="./food2.png" />
 </p>
 <p align="center">
-  <img height="200" width="200" src="./food3.png" />
+  <img height="300" width="600" src="./food3.png" />
 </p>
-<p align="right">
-  <img height="200" width="200" src="./food4.png" />
+<p align="center">
+  <img height="300" width="600" src="./food4.png" />
 </p>
 
 ## Objetivos del Proyecto
