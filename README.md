@@ -6,15 +6,15 @@
 <p align="center">
   <img height="300" width="600" src="./food1.png" />
 </p>
-<h3>Home!</h3>
+<h3 align="center">Home!</h3>
 <p align="center">
   <img height="300" width="600" src="./food2.png" />
 </p>
-<h3>Filtros!</h3>
+<h3 align="center">Filtros!</h3>
 <p align="center">
   <img height="300" width="600" src="./food3.png" />
 </p>
-<h3>Crear nueva receta!</h3>
+<h3 align="center">Crear nueva receta!</h3>
 <p align="center">
   <img height="300" width="600" src="./food4.png" />
 </p>
