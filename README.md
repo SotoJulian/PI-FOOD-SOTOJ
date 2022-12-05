@@ -2,7 +2,7 @@
 
 <h3 align="center">Proyecto individual final realizado por Julián Soto para el bootcamp Soy Henry! 🚀 🙂 </h3>
 
-<h3 align="center">Landing Page!</h3>
+<h3 align="center">Landing Page! 📣</h3>
 <p align="center">
   <img height="300" width="600" src="./food1.png" />
 </p>
